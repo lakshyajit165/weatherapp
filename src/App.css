@@ -14,3 +14,7 @@
 -moz-box-shadow: 7px 7px 22px 0px rgba(0,0,0,0.67);
 box-shadow: 7px 7px 22px 0px rgba(0,0,0,0.67);
 }
+body{
+  font-family: 'Questrial', sans-serif;
+
+}
