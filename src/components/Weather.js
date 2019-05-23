@@ -49,14 +49,14 @@ class Weather extends Component{
 				    }	
 					
 
-				    { this.props.error && 						
+				    {/* { this.props.error && 						
 				    <tr>
 				      
 				      
 				      <td className="text-center">{ this.props.error}</td>
 				      
 				    </tr>
-				    }		
+				    }		 */}
 
 						
 				    
@@ -64,7 +64,7 @@ class Weather extends Component{
 				</table>
 				{this.props.city && this.props.country &&
                    <div className="container text-center">
-                        <button className="btn btn-info">Forecast</button>
+                        <button className="btn btn-light" onClick={this.props.getForecast}>Forecast<i className="fas fa-cloud-sun-rain ml-1"></i></button>
                    </div>
                 }
 			</div>
