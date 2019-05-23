@@ -1,20 +1,13 @@
-.wrapper {
-  background: url("img/weather.jpg") center center no-repeat;
-  background-size: cover;
-  
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.jumbotron{
-  height: 540px;
-  background-color: rgba(255,255,255, 0.6);
-  -webkit-box-shadow: 7px 7px 22px 0px rgba(0,0,0,0.67);
--moz-box-shadow: 7px 7px 22px 0px rgba(0,0,0,0.67);
-box-shadow: 7px 7px 22px 0px rgba(0,0,0,0.67);
-}
 body{
   font-family: 'Questrial', sans-serif;
 
+}
+
+td.text-right{
+  font-weight: bold;
+  width: 50%;
+}
+
+td.text.left{
+  width: 50%;
 }

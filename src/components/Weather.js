@@ -1,19 +1,21 @@
-import React from "react";
+import React, { Component } from "react";
 
-class Weather extends React.Component{
+class Weather extends Component{
 	render(){
 		return(
-			<div className="container col-lg-8 mx-auto">
-
-				<table className="table">
+			<div className="container pt-2 mt-3 col-lg-8 mx-auto text-center">
+                {this.props.city && this.props.country &&
+                    <h4>Present Conditions</h4>
+                }
+				<table className="table pb-3 mb-2">
   
 				  <tbody>
 				    {this.props.city && this.props.country &&
-
+                    
 				    <tr>
 				      
-				      <td className="text-right"><b>Location:</b></td>
-				      <td className="text-left">{ this.props.city}, { this.props.country}</td>
+				      <td className="text-right mx-auto"><b>Location:</b></td>
+				      <td className="text-left mx-auto">{ this.props.city}, { this.props.country}</td>
 				      
 				    </tr>
 				    }
@@ -37,13 +39,15 @@ class Weather extends React.Component{
 				    }	
 
 				    { this.props.description && 						
-				    <tr>
+				    <tr className="mb-5">
 				      
-				      <td className="text-right"><b>Conditions:</b></td>
+				      <td className="text-right"><span className="text-bold">Conditions:</span></td>
 				      <td className="text-left">{ this.props.description}</td>
-				      
+				  
 				    </tr>
+								
 				    }	
+					
 
 				    { this.props.error && 						
 				    <tr>
@@ -58,7 +62,11 @@ class Weather extends React.Component{
 				    
 				  </tbody>
 				</table>
-
+				{this.props.city && this.props.country &&
+                   <div className="container text-center">
+                        <button className="btn btn-info">Forecast</button>
+                   </div>
+                }
 			</div>
 		);
 	}
