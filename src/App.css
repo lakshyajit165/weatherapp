@@ -13,9 +13,15 @@ td.text.left{
 }
 
 body {
-  background: url("img/weather.jpg") no-repeat center fixed;
+  /* background: url("img/weather.jpg") no-repeat center fixed;
+  background-size: cover; */
+  background: url("img/weather.jpg") center center no-repeat;
   background-size: cover;
   
+  height: 100vh;
+  
+  justify-content: center;
+  align-items: center;
 }
 .jumbotron{
  
