@@ -150,7 +150,7 @@ class App extends Component {
     <div className="wrapper">
       <Titles />
       <div className="col-md-10 pt-1 mx-auto">
-        <div className="jumbotron pt-4 ">
+        <div className="jumbotron col-lg-10 mx-auto pt-4 ">
           
           <Form getWeather={this.getWeather}/>
           {this.state.loading ? 
